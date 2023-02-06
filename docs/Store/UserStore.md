@@ -1,7 +1,17 @@
-Stockage des infos utilisateurs de base
-- user name
-- roles
+Store utilisé par les composants d'interface pour interragir avec [les données utilisateurs](../Interfaces/User.md)
 
-Stockage des favoris utilisateurs
+## `user: Observable<User>`
 
-Stockage des préférences utilisateurs
+Référence à l'utilisateur connecté
+
+## `updateNotificationSettings(webNotif: boolean, mailNotif: boolean): Observable<User>`
+
+Mise à jour des préférences de notifications
+
+## `addFavorite(menuId: MenuID): Observable<void>`
+
+Ajout d'un nouveau favoris
+
+## ``removeFavorite(menuId: MenuID): Observable<void>`
+
+Suppression d'un favoris
