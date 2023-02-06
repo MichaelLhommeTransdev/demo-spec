@@ -1,0 +1,1 @@
+Stockage de l'arborescence des menus pour accès à travers toute l'application

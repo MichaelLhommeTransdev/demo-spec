@@ -1,0 +1,3 @@
+- listSettings
+- updateSettingValue(value, unit)
+- setMaintenance(params)
