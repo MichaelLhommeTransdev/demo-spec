@@ -1,63 +1,65 @@
 Service responsable des échanges avec le backend pour les entités [Documentation](../Interfaces/Documentation.md#documentation) et  [DocumentationTheme](../Interfaces/Documentation.md#documentationtheme).
 
 
-## Méthodes
+## DocumentationTheme
 
-### `list(): Documentation[]`
+### `list(): Observable<DocumentationTheme[]>`
 
-Liste les documentations **accessibles par l'utilisateur**
+Liste des thèmes
 
-### `download(id: DocumentationID): void`
-
-Démarre le téléchargement du fichier associé
-
-### `downloadAll(ids: DocumentationID[]): void`
-
-Démarre le téléchargement des fichiers associés
-
-## Endpoints associés
-
-
-### Documentation Themes
-
-#### GET /documentationThemes
+Endpoint: `GET /documentationThemes`
 
 - Body : empty
 - Response : `DocumentationTheme[]`
 
-#### POST /documentationThemes
+
+### `create(theme: DocumentationTheme): Observable<DocumentationTheme>`
+
+Crée un nouveau thème
+
+Endpoint: `POST /documentationThemes`
 
 - Body : `DocumentationTheme`
 - Response : `DocumentationTheme`
 
-#### GET /documentationThemes/:id
+### `update(id: DocumentationThemeID, theme: DocumentationTheme): Observable<DocumentationTheme>`
 
-- Path param: `:id` as String
-- Response : `DocumentationTheme`
+Met à jour un thème
 
-#### PUT /documentationThemes/:id
+Endpoint: `PUT /documentationThemes/:id`
 
 - Path param: `:id` as String
 - Body : `DocumentationTheme`
 * Response : `DocumentationTheme`
 
-#### DELETE /documentationThemes/:id
+### `delete(id: DocumentationThemeID): Observable<void>`
+
+Supprime un thème
+
+Endpoint: `DELETE /documentationThemes/:id`
 
 - Path param: `:id` as String
+- Body : empty
 - Response : empty
 
+## Documentation
 
-### Documentations
+### `list(): Observable<Documentation[]>`
 
-#### GET /documentations
+Liste les documentations **accessibles par l'utilisateur**
 
 !!! warning
 	Filtrage implicite en fonction du rôle utilisateur : les documents réservés aux admins ne seront retournés que pour un administrateur
 
+Endpoint: `GET /documentations`
+
 - Body : empty
 - Response : `Documentation[]`
 
-#### POST /documentations
+	
+### `create(doc: Documentation, file: File): Observable<Documentation>`
+
+Crée une nouvelle documentation avec un fichier joint
 
 !!! INFO
 	Ce point d'entrée utilise un format `multipart/form-data` avec deux champs : 
@@ -65,34 +67,54 @@ Démarre le téléchargement des fichiers associés
 	- `file` pour le blob
 	- `json` pour les données
 
+Endpoint: `POST /documentations`
+
 - Body : Multipart content
 - Response : `Documentation`
 
-#### GET /documentations/:id/attachment
+
+### `update(id: DocumentationID: doc: Documentation, file?: File): Observable<Documentation>`
+
+Met à jour une documentation, avec mise à jour optionnelle du fichier joint
 
 !!! INFO
-	Ce point d'entrée renvoi un fichier
+	Ce point d'entrée utilise un format `multipart/form-data` avec deux champs : 
 	
-	Pour télécharger :
-	```
-	Content-Type: application/octet-stream
-	Content-Disposition: attachment
-	```
+	- `file` pour le blob
+	- `json` pour les données
 	
-	Pour ouverture dans le navigateur (PDF) :
+	[Configuration Spring](https://www.intelliware.com/submitting-a-multipart-request-multipartform-data-using-put-and-spring-boot/) pour `multipart/form-data` avec méthode `PUT`
+
+Endpoint: `PUT /documentations/:id`
+
+- Path param: `:id` as String
+- Body : Multipart content
+- Response : `Documentation`
+
+
+
+### `download(id: DocumentationID): Observable<void>`
+
+Démarre le téléchargement du fichier associé
+
+!!! INFO
+	Ce point d'entrée renvoi un fichier, le navigateur peut éventuellement l'afficher directement (cas des PDF) si le serveur utilise les headers suivants :
+	
 	```
 	Content-Type: application/pdf
 	Content-Disposition: inline; filename="filename.pdf"
 	```
 
-!!! WARNING
-	Besoin de stocker le nom de fichier ainsi que le content type pour display inline
-
+Endpoint: `GET /documentations/:id/attachment`
 
 - Path param: `:id` as String
+- Body : empty
 - Response : binary data 
 
-#### GET /documentations/attachment
+
+### `downloadAll(ids: DocumentationID[]): Observable<void>`
+
+Démarre le téléchargement de plusieurs fichiers associés
 
 !!! INFO
 	Ce point d'entrée renvoi un fichier ZIP contenant plusieurs documents
@@ -102,57 +124,24 @@ Démarre le téléchargement des fichiers associés
 	Content-Disposition: attachment
 	```
 
-!!! WARNING
-	Besoin de stocker le nom de fichier (au moins l'extension) pour générer le zip
+Endpoint: `GET /documentations/attachments`
 
-
-- Path param: `:id` as String
+- Body: `DocumentationID[]` as JSON
 - Response : binary data 
 
+### `archive(ids: DocumentationID[]): Observable<void>`
 
-#### PUT /documentations/:id
+Archive plusieurs documentations 
 
-!!! INFO
-	Ce point d'entrée utilise un format `multipart/form-data` avec deux champs : 
-	
-	- `file` pour le blob
-	- `json` pour les données
+Endpoint: `POST /documentations/archive`
 
-- Path param: `:id` as String
-- Body : Multipart content
-- Response : `Documentation`
-
-!!! WARNING
-	https://www.intelliware.com/submitting-a-multipart-request-multipartform-data-using-put-and-spring-boot/
+- Body : `DocumentationID[]` as JSON
+- Response : `DocumentationID[]`
 
 
-#### POST /documentations/archive
+### `delete(ids: DocumentationID[]): Observable<void>`
 
-!!! INFO
-	  Permet l'achivage en masse
+Endpoint: `DELETE /documentations`
 
-- Body : `number[]` as json
-- Response : `number[]`
-
-#### DELETE /documentations
-
-!!! INFO
-    Permet la suppression en masse. Remplace le endpoint de suppression classique
-
-- Body : `number[]` as json
-- Response : `number[]`
-
-## CRUD admin
-- add
-- update
-- delete
-- addTheme
-- updateTheme
-- deleteTheme
-
-
-## Actions utilisateurs
-
-- listDocs()
-- downloadDoc(id)
-- downloadDocs(ids[])
+- Body : `DocumentationID[]` as JSON
+- Response : `DocumentationID[]`

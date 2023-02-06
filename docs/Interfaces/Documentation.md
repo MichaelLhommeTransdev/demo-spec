@@ -41,8 +41,7 @@ interface Documentation {
 	version: string
 	archived: boolean
 	adminRequired: boolean
-	test: boolean
-	creationDate: Datetime
+	creationDate: Date
 }
 ```
 

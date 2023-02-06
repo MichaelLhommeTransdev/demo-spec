@@ -2,40 +2,40 @@ Store utilisé par les composants d'interface pour interragir avec les [objects 
 
 ## DocumentationTheme
 
-### `listThemes(): Observable<DocumentationTheme[]>`
+### `themes: Observable<DocumentationTheme[]>`
 
-Liste les thèmes
+Liste des thèmes
 
-### `create(theme: DocumentationTheme): Observable<DocumentationTheme>`
+### `createTheme(theme: DocumentationTheme): Observable<DocumentationTheme>`
 
 Crée un nouveau thème
 
-### `update(id: DocumentationThemeID, theme: DocumentationTheme): Observable<DocumentationTheme>`
+### `updateTheme(id: DocumentationThemeID, theme: DocumentationTheme): Observable<DocumentationTheme>`
 
 Met à jour un thème
 
-### `delete(id: DocumentationThemeID): Observable<void>`
+### `deleteTheme(id: DocumentationThemeID): Observable<void>`
 
 Supprime un thème
 
 ## Documentation
 
-### `list(): Observable<Documentation[]>`
+### `documentations: Observable<Documentation[]>`
 
-Liste les documentations
+Liste des documentations
 
-### `create(doc: Documentation): Observable<Documentation>`
+### `createDoc(doc: Documentation, file: File): Observable<Documentation>`
 
-Crée une nouvelle documentation
+Crée une nouvelle documentation avec un fichier joint
 
-### `update(id: DocumentationID, doc: Documentation): Observable<Documentation>`
+### `updateDoc(id: DocumentationID, doc: Documentation, file?: File): Observable<Documentation>`
 
-Met à jour une documentation
+Met à jour une documentation, le champ fichier étant optionnel
 
-### `archive(id: DocumentationID): Observable<void>`
+### `archiveDoc(id: DocumentationID): Observable<void>`
 
 Archive une documentation
 
-### `archiveAll(ids: DocumentationID[]): Observable<void>`
+### `archiveAllDoc(ids: DocumentationID[]): Observable<void>`
 
 Archives plusieurs documentations

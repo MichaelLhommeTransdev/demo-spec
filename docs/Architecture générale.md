@@ -47,12 +47,14 @@ Découpage de l'application en modules pour permettre un un chargement en 2 temp
 
 - src/app
 	- services/AuthenticationSvc
+	- pages
+		- unauthorized
+		- maintenance
 	- main
-		- components
-		- pages
-		- modules
-		- services
-		- stores
+		- components/
+		- pages/
+		- services/
+		- stores/
   
 ## Sécurité, gestion des droits et contraintes
 
@@ -60,7 +62,7 @@ L'application Angular est en charge de :
 
 - masquer les contrôles associés à des rôles que l'utilisateur n'a pas
 - s'assurer que les données saisies sont conformes aux contraintes de la BDD
-- s'assurer que l'utilisateur possède les droits demandés avant d'accepter de naviguer vers une page (voir [Router](Router.md))
+- s'assurer que l'utilisateur possède les droits demandés avant d'accepter de naviguer vers une page
 
 L'application Spring est responsable de :
 
