@@ -1,3 +1,4 @@
+Flux de données entre l'interface Angular et le backend
 
 ```mermaid
 sequenceDiagram
