@@ -1,4 +1,5 @@
 site_name: CODA RC Web
+site_dir: https://michaellhommetransdev.github.io/demo-spec/
 docs_dir: ./docs
 theme:
   name: 'material'
