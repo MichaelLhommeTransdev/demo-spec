@@ -1,4 +1,6 @@
-# Retour en erreur
+# Bootstrap en erreur
+
+Démarrage de l'application Angular dans le cas d'une erreur d'authentification
 
 ```mermaid
 sequenceDiagram

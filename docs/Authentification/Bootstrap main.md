@@ -1,5 +1,6 @@
 # Bootstrap application
 
+Démarrage de l'application Angular lors d'une connexion réussie
 
 ```mermaid
 sequenceDiagram
