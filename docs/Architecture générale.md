@@ -4,6 +4,7 @@
 - [TailwindCSS](https://tailwindcss.com/) (Angular Flex Layout deprecated)
 - [DateFns](https://date-fns.org/) (Moment.js deprecated)
 - [AngularEditor](https://github.com/kolkov/angular-editor)
+- [Angular PowerBI](https://github.com/microsoft/powerbi-client-angular)
 
 
 ## Sécurité, gestion des droits et contraintes

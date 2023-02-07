@@ -1,9 +1,4 @@
-![Pasted image 20230125093431](../medias/Pasted%20image%2020230125093431.png)
-
-## Estimation
-
-Durée : 1j
-Risque : 0
+![Pasted image 20230125093431](/medias/Pasted%20image%2020230125093431.png)
 
 ## Implémentation
 

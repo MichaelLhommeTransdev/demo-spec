@@ -1,14 +1,10 @@
-![Pasted image 20230125092746](../medias/Pasted%20image%2020230125092746.png)
+Le layout global de l'application
 
-
-## Estimation
-
-Durée : 1/2j
-Risque : 0
+![Pasted image 20230125092746](/medias/Pasted%20image%2020230125092746.png)
 
 ## Implémentation
 
-Contenu statique
+Contenu statique faisant appel à d'autres composants
 
 ### Composants
 - [Drawer](Drawer.md)
