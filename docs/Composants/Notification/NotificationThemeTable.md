@@ -1,0 +1,14 @@
+Un simple tableau permettant l'affichage et la suppression des thèmes de documentation.
+
+![](/medias/notification_themes_table.png)
+
+## Implémentation
+
+L'édition est accessible via un bouton présent sur chaque ligne, et la création de nouveaux thèmes via un bouton général. Ces deux actions ouvrent un [dialogue formulaire](./NotificationThemeFormDialog.md).
+
+!!! warning
+    La suppression ne doit pas être possible si des notifications existent pour ce thème (champ `itemsCount` > 0)
+
+## Utilisation des services
+
+- [NotificationStore](/Store/NotificationsStore)

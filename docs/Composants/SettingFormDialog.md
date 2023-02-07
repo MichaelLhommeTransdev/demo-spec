@@ -1,4 +1,6 @@
-Formulaire d'édition de paramètre sous forme de popup.
+Formulaire d'édition de paramètre sous forme de dialogue modale.
+
+Seuls les champs **value** et **unit** doivent être modifiable.
 
 ## Input
 

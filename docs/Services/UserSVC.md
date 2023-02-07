@@ -57,3 +57,12 @@ Endpoint: `GET /users?filter=:filter`
 - Request param : `filter` as string
 - Body : empty
 - Response : `string[]`
+
+## `listRoles(): Observable<UserRole[]>`
+
+Liste les rôles utilisateurs possible
+
+Endpoint: `GET /users/roles`
+
+- Body: empty
+- Response: `string[]`

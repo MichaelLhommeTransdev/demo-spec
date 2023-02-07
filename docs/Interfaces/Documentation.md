@@ -1,14 +1,20 @@
-Détails des interfaces pour les fonctionnalités liées à la documentation. Les traitements associés sont gérés par le [store documentation](../Store/) et le [service documentation](../Services/DocumentationSVC.md).
+Détails des interfaces pour les fonctionnalités liées à la documentation. Les traitements associés sont gérés par le [store documentation](../Store/DocumentationStore.md) et le [service documentation](../Services/DocumentationSVC.md).
 
-## DocumentationTheme
+- DocumentationTheme : permet de regrouper plusieurs documentation
+- Documentation : une documentation
 
-Permet de regrouper les documentations par thèmes.
+## Types de base
+
+```ts
+type DocumentationID = number
+type DocumentationThemeID = string
+```
+
+## Interface **DocumentationTheme**
 
 ### Typescript
 
 ```ts
-type DocumentationThemeID = string
-
 interface DocumentationTheme {
 	id: DocumentationThemeID
 	name: string
@@ -18,7 +24,7 @@ interface DocumentationTheme {
 ```
 
 !!! info
-		`itemsCount` n'apparait pas explicitement dans la spécification fonctionnelle d'origine mais est nécessaire pour empêcher la suppression d'un thème lorsque celui-ci est lié à des documentations.
+		`itemsCount` n'apparait pas explicitement dans la spécification fonctionnelle d'origine mais est nécessaire pour empêcher la suppression d'un thème lorsque celui-ci est utilisé par des documentations.
 
 ### Contraintes
 
@@ -26,13 +32,11 @@ interface DocumentationTheme {
 - name: strlen <= 100
 - shortName: strlen <= 30
 
-## Documentation
+## Interface **Documentation**
 
 ### Typescript
 
 ```ts
-type DocumentationID = number
-
 interface Documentation {
 	id: DocumentationID
 	theme: string

@@ -2,7 +2,7 @@ Détail de l'interface `User` utilisée pour représenter l'utilisateur actuelle
 ## TypeScript
 
 ```ts
-enum Role {
+enum UserRole {
 	CRC_User = "CRC_User",
 	CRC_Admin = "CRC_Admin",
 	CRC_KeyUser = "CRC_KeyUser",
@@ -14,7 +14,7 @@ enum Role {
 
 interface User {
 	name: string
-	roles: Role[]
+	roles: UserRole[]
 	favorites: MenuID[]
 	notifMail: boolean
 	notifweb: boolean

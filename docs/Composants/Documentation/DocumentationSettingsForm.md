@@ -1,6 +1,6 @@
 Un simple formulaire permettant de mettre à jour les paramètres liés à la documentation.
 
-![](../../medias/documentation_settings_form.png)
+![](/medias/documentation_settings_form.png)
 
 ## Validation : 
 
@@ -9,4 +9,4 @@ Un simple formulaire permettant de mettre à jour les paramètres liés à la do
 
 ## Utilisation des services
 
-- [SettingsStore](../../Store/SettingsStore.md)
+- [SettingsStore](/Store/SettingsStore)

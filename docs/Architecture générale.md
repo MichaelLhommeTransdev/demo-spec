@@ -1,8 +1,9 @@
 ## Dépendances
 
-- Angular Material
-- TailwindCSS (Angular Flex Layout deprecated)
-- DateFns (Moment.js deprecated)
+- [Angular Material](https://material.angular.io/)
+- [TailwindCSS](https://tailwindcss.com/) (Angular Flex Layout deprecated)
+- [DateFns](https://date-fns.org/) (Moment.js deprecated)
+- [AngularEditor](https://github.com/kolkov/angular-editor)
 
 
 ## Sécurité, gestion des droits et contraintes

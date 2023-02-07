@@ -3,7 +3,7 @@ Service responsable des échanges avec le backend pour les entités [Documentati
 
 ## DocumentationTheme
 
-### `list(): Observable<DocumentationTheme[]>`
+### `listThemes(): Observable<DocumentationTheme[]>`
 
 Liste des thèmes
 
@@ -13,7 +13,7 @@ Endpoint: `GET /documentationThemes`
 - Response : `DocumentationTheme[]`
 
 
-### `create(theme: DocumentationTheme): Observable<DocumentationTheme>`
+### `createTheme(theme: DocumentationTheme): Observable<DocumentationTheme>`
 
 Crée un nouveau thème
 
@@ -22,7 +22,7 @@ Endpoint: `POST /documentationThemes`
 - Body : `DocumentationTheme`
 - Response : `DocumentationTheme`
 
-### `update(id: DocumentationThemeID, theme: DocumentationTheme): Observable<DocumentationTheme>`
+### `updateTheme(id: DocumentationThemeID, theme: DocumentationTheme): Observable<DocumentationTheme>`
 
 Met à jour un thème
 
@@ -32,7 +32,7 @@ Endpoint: `PUT /documentationThemes/:id`
 - Body : `DocumentationTheme`
 * Response : `DocumentationTheme`
 
-### `delete(id: DocumentationThemeID): Observable<void>`
+### `deleteTheme(id: DocumentationThemeID): Observable<void>`
 
 Supprime un thème
 
@@ -140,6 +140,8 @@ Endpoint: `POST /documentations/archive`
 
 
 ### `delete(ids: DocumentationID[]): Observable<void>`
+
+Supprime plusieurs documentation d'un coup
 
 Endpoint: `DELETE /documentations`
 

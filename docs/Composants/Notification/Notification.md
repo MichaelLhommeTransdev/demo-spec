@@ -1,26 +1,22 @@
-![Pasted image 20230125095301](../medias/Pasted%20image%2020230125095301.png)
+Une simple carte affichant les informations de la notification ainsi que les contrôles associés
 
-![Pasted image 20230125095309](../medias/Pasted%20image%2020230125095309.png)
+![Pasted image 20230125095301](/medias/Pasted%20image%2020230125095301.png)
 
-## Estimation
-
-Durée : 2j
-Risque : 0
+![Pasted image 20230125095309](/medias/Pasted%20image%2020230125095309.png)
 
 ## Implémentation
 
 Tooltip sur les boutons et les icônes
+
 Affichage des informations passées en **Input**
 
 ### Input
-Une instance de notification
+
+`notification: Notification`
 
 ### Services
-- [NotificationsSVC](../Services/NotificationsSVC.md)
-	- thumbUp
-	- thumbDown
-	- markRead
-	- delete
+- [NotificationsStore](/Store/NotificationsStore)
+- [NotificationsSVC](/Services/NotificationsSVC)
 	- downloadAttachments
 
 ### Material
