@@ -54,6 +54,6 @@ Effectue une recherche d'utilisateur pour récupérer leurs noms.
 
 Endpoint: `GET /users?filter=:filter`
 
-- Path param : `:filter` as string
+- Request param : `filter` as string
 - Body : empty
 - Response : `string[]`

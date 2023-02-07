@@ -4,7 +4,7 @@ Détails des interfaces pour les fonctionnalités liées à la documentation. Le
 
 Permet de regrouper les documentations par thèmes.
 
-### Interface
+### Typescript
 
 ```ts
 type DocumentationThemeID = string
@@ -28,7 +28,7 @@ interface DocumentationTheme {
 
 ## Documentation
 
-### Interface
+### Typescript
 
 ```ts
 type DocumentationID = number

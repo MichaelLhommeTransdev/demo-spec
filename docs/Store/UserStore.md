@@ -12,6 +12,6 @@ Mise à jour des préférences de notifications
 
 Ajout d'un nouveau favoris
 
-## ``removeFavorite(menuId: MenuID): Observable<void>`
+## `removeFavorite(menuId: MenuID): Observable<void>`
 
 Suppression d'un favoris
