@@ -1,59 +1,31 @@
+Interface dédiée au paramétrage de l'application. Les traitements associés sont gérés par le [store Settings](../Store/SettingsStore.md) et le [service Setting](../Services/SettingsSVC.md).
 
-Prévoir conversion d'un champ unique typé Union vers de multiple champs typés scalaires (côté back ou côté front ?)
-
-## MCD
-
-![Pasted image 20230125143312](../medias/Pasted%20image%2020230125143312.png)
-
-## TS
+## Typescript
 
 ```ts
+type SettingID = string
+
 enum SettingType {
-	VARCHAR,
-	INT,
-	BOOLEAN
+	VARCHAR = "Varchar",
+	INT = "INT",
+	BOOLEAN = "Boolean"
 }
 
 interface Setting {
-	code: string
+	code: SettingID
 	name: string
-	type: string
+	type: SettingType
 	unit: string
-	value: Date | DateTime | string | number | boolean
+	value: string | number | boolean | Date
 }
 ```
-
-!!! QUESTION
-	#question
-	La table prévoit des champs date, mais non utilisé ?
 
 ## Contraintes
 - code : strlen <= 50
 - name : strlen <= 100
 - type : strlen <= 100
-- value : validate format depending on type
+- value : format à valider en fonction du type associé
 
-## Endpoints
+## MCD d'origine
 
-### GET /parameters
-
-- Body : empty
-- Response : `Setting[]`
-
-### GET /parameters/:code
-
-- Path param : `:code` as String
-- Body : empty
-- Response : `Setting`
-
-### PATCH /parameters/:code
-
-- Body : 
-```json
-{
-	type: string,
-	unit: string,
-	value: Date | DateTime | string | number | boolean
-}
-```
-- Response : `Setting`
+![Pasted image 20230125143312](../medias/Pasted%20image%2020230125143312.png)
