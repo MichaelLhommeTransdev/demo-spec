@@ -2,11 +2,6 @@
 
 ![Pasted image 20230125095137](../medias/Pasted%20image%2020230125095137.png)
 
-## Estimation
-
-Durée : 3j
-Risque : 1
-
 ## Implémentation
 
 ### Validation

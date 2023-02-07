@@ -3,11 +3,6 @@
 ![Pasted image 20230125095559](../medias/Pasted%20image%2020230125095559.png)
 ![Pasted image 20230125095048](../medias/Pasted%20image%2020230125095048.png)
 
-## Estimation
-
-Durée : 3j
-Risque : 1
-
 ## Implémentation
 
 #TODO

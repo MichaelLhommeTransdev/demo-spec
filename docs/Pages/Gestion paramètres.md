@@ -2,11 +2,6 @@
 
 ![Pasted image 20230125095735](../medias/Pasted%20image%2020230125095735.png)
 
-## Estimation
-
-Durée : 1j
-Risque : 0
-
 ## Implémentation
 
 Récupération des settings dans un état local lors du chargement de la page (**onNgInit**)

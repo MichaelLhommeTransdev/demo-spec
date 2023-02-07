@@ -2,11 +2,6 @@
 
 ![Pasted image 20230125095855](../medias/Pasted%20image%2020230125095855.png)
 
-## Estimation
-
-Durée : 1j
-Risque : 0
-
 ## Implémentation
 
 Récupération des données au chargement de la page (**onNgInit**)

@@ -1,10 +1,5 @@
 ![Pasted image 20230125094712](../medias/Pasted%20image%2020230125094712.png)
 
-## Estimation
-
-Durée : 2j
-Risque : 0
-
 ## Implémentation
 
 Simple Formulaire
