@@ -8,4 +8,4 @@ Le formulaire doit suivre les [règles de validation](../../Interfaces/Documenta
 
 ## Utilisation des services
 
-- [DocumentationSVC](../../Services/DocumentationSVC.md)
+- [DocumentationStore](../../Store/DocumentationStore.md)
