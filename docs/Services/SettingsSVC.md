@@ -19,7 +19,9 @@ Endpoint: `GET /parameters/:code`
 - Body : empty
 - Response : `Setting[]`
 
-### `update(code: SettingID, setting: Setting)`
+### `update(code: SettingID, setting: Setting): Observable<Setting>`
+
+Met à jour un paramètre
 
 Endpoint: `PATCH /parameters/:code`
 
@@ -32,3 +34,22 @@ Endpoint: `PATCH /parameters/:code`
 }
 ```
 - Response : `Setting`
+
+### `updateAll(settings: Setting[]): Observable<Setting[]>`
+
+Met à jour plusieurs paramètres d'un coup
+
+Endpoint: `PATCH /parameters`
+
+- Body : JSON
+```json
+[
+	{
+		type: string,
+		unit: string,
+		value: string | number | boolean | Date
+	}
+]
+```
+
+- Response : `Setting[]`

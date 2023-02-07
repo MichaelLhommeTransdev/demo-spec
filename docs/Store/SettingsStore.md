@@ -11,3 +11,7 @@ Sélectionne un paramètre à partir de son ID
 ## `update(code: SettingID, setting: Setting): Observable<Setting>`
 
 Mise à jour d'un paramètre
+
+## `updateAll(settings: Settings[]): Observable<Setting[]>`
+
+Met à jour plusieurs paramètres d'un coup

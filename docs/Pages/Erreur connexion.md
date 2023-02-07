@@ -3,3 +3,6 @@
 ## Implémentation
 
 Simple page statique
+
+!!! warning
+    Cette page fait partie du module ROOT

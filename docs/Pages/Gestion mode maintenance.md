@@ -1,21 +1,25 @@
+Cette page permet à un **administrateur** de contrôler le mode maintenance de l'application.
+
+!!! warning
+		Contrainte de routage `HasRole('CRC_Admin')`
+
 ![Pasted image 20230125094712](../medias/Pasted%20image%2020230125094712.png)
 
 ## Implémentation
 
-Simple Formulaire
+Simple formulaire qui permet de contrôler plusieurs paramètres liés au mode maintenance. Les champs de configuration doivent être validés en un bloc.
 
-#Question 
-Précharge une liste d'utilisateur (peu de users) ou fait des appels uniquement lors de la recherche ?
+L'activation / désactivation du mode maintenance fait appel à un contrôle séparé des autres.
 
 ### Services
 - [UserSVC](../Services/UserSVC.md)
 	- searchUsers(filter)
-- [SettingsSVC](../Services/SettingsSVC.md)
+- [SettingsStore](../Store/SettingsStore.md.md)
 	- setMaintenance(params)
 
 ### Material
 - [Slide toggle](https://material.angular.io/components/slide-toggle)
 - [Button](https://material.angular.io/components/button)
-- [Checkbox](https://material.angular.io/components/checkbox)o
+- [Checkbox](https://material.angular.io/components/checkbox)
 - [Input](https://material.angular.io/components/input)
 - [List](https://material.angular.io/components/list)
