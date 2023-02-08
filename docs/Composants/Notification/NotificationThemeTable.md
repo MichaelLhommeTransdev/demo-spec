@@ -11,4 +11,4 @@ L'édition est accessible via un bouton présent sur chaque ligne, et la créati
 
 ## Utilisation des services
 
-- [NotificationStore](/Store/NotificationsStore)
+- [NotificationStore](../../../Store/NotificationsStore)

@@ -12,7 +12,7 @@ Boucle sur les données du store pour afficher les notifications
 - [Notification](./Notification.md)
 
 ### Stores
-- [NotificationsStore](/Store/NotificationsStore)
+- [NotificationsStore](../../../Store/NotificationsStore)
 
 ### Material
 - [Icon](https://material.angular.io/components/icon/overview)

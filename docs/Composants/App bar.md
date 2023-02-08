@@ -9,7 +9,7 @@ Utilisation du **store notification** pour affichage du nombre de notifications 
 Ouverture de la liste des notifications a l'aide d'un **dialog**.
 
 ### Composants
-- [Notifications popup](/Composants/Notification/NotificationsPopup)
+- [Notifications popup](../Notification/NotificationsPopup)
 
 ### Stores
 - [NotificationsStore](../Store/NotificationsStore.md)

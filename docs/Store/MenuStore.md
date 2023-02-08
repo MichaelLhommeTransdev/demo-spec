@@ -1,4 +1,4 @@
-Store utilisé par les composants d'interface pour interragir avec les [objects de menus](/Interfaces/Menu). Il permet de garder en mémoire les données, et fait suivre les appels au [service MenuSVC](/Services/MenuSVC).
+Store utilisé par les composants d'interface pour interragir avec les [objects de menus](../../Interfaces/Menu). Il permet de garder en mémoire les données, et fait suivre les appels au [service MenuSVC](../../Services/MenuSVC).
 
 ## MenuRoot
 

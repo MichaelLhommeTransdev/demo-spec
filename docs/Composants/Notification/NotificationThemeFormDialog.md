@@ -1,6 +1,6 @@
 Formulaire de création et d'édition de thèmes de notification. Selon la présence ou non d'une propriété `theme` le formulaire devra s'adapter au mode *édition* ou *création*.
 
-Le formulaire doit suivre les [règles de validation](/Interfaces/Notification/#contraintes) des thèmes
+Le formulaire doit suivre les [règles de validation](../../../Interfaces/Notification/#contraintes) des thèmes
 
 ## Input
 
@@ -8,4 +8,4 @@ Le formulaire doit suivre les [règles de validation](/Interfaces/Notification/#
 
 ## Utilisation des services
 
-- [NotificationStore](/Store/NotificationsStore)
+- [NotificationStore](../../../Store/NotificationsStore)

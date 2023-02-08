@@ -1,4 +1,4 @@
-Service responsable des échanges avec le backend pour les entités [Menu](/Interfaces/Menu).
+Service responsable des échanges avec le backend pour les entités [Menu](../../Interfaces/Menu).
 
 
 ## RootMenu

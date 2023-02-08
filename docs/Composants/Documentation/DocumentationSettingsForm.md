@@ -9,4 +9,4 @@ Un simple formulaire permettant de mettre à jour les paramètres liés à la do
 
 ## Utilisation des services
 
-- [SettingsStore](/Store/SettingsStore)
+- [SettingsStore](../../../Store/SettingsStore)

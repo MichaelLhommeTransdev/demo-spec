@@ -9,10 +9,10 @@ Cette page permet à un **administrateur** de gérer les paramètres
 
 ## Implémentation
 
-Simple page qui affiche un tableau avec les valeurs des différents paramètres. Pas d'ajout ni de suppression à prévoir. Un bouton par ligne permet d'ouvrir un [formulaire dialogue](/Composants/SettingFormDialog) pour éditer l'unité et la valeur uniquement.
+Simple page qui affiche un tableau avec les valeurs des différents paramètres. Pas d'ajout ni de suppression à prévoir. Un bouton par ligne permet d'ouvrir un [formulaire dialogue](../../Composants/SettingFormDialog) pour éditer l'unité et la valeur uniquement.
 
 ### Services
-- [SettingsStore](/Store/SettingsStore)
+- [SettingsStore](../../Store/SettingsStore)
 
 ### Angular
 - [Button](https://material.angular.io/components/button)

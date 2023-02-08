@@ -15,8 +15,8 @@ Affichage des informations passées en **Input**
 `notification: Notification`
 
 ### Services
-- [NotificationsStore](/Store/NotificationsStore)
-- [NotificationsSVC](/Services/NotificationsSVC)
+- [NotificationsStore](../../../Store/NotificationsStore)
+- [NotificationsSVC](../../../Services/NotificationsSVC)
 	- downloadAttachments
 
 ### Material

@@ -13,4 +13,4 @@ Le tableau doit supporter la sélection multiple pour permettre d'appliquer les 
 
 ## Utilisation des services
 
-- [DocumentationStore](/Store/DocumentationStore)
+- [DocumentationStore](../../../Store/DocumentationStore)

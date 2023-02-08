@@ -1,4 +1,4 @@
-Détails des interfaces pour les fonctionnalités liées aux notifications. Les traitements associés sont gérés par le [store menu](/Store/MenuStore) et le [service menu](/Services/MenuSVC).
+Détails des interfaces pour les fonctionnalités liées aux notifications. Les traitements associés sont gérés par le [store menu](../../Store/MenuStore) et le [service menu](../../Services/MenuSVC).
 
 ## Types de base
 

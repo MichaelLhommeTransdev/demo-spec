@@ -11,4 +11,4 @@ Un simple formulaire permettant de mettre à jour les paramètres liés aux noti
 
 ## Utilisation des services
 
-- [SettingsStore](/Store/SettingsStore)
+- [SettingsStore](../../../Store/SettingsStore)
