@@ -54,4 +54,4 @@ interface Menu {
 
 ## MCD d'origine
 
-![Pasted image 20230125145622](/medias/Pasted%20image%2020230125145622.png)
+![Pasted image 20230125145622](../medias/Pasted%20image%2020230125145622.png)

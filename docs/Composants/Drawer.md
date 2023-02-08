@@ -1,7 +1,7 @@
 Menu tirroir de l'application avec deux états
 
-![Pasted image 20230125093027](/medias/Pasted%20image%2020230125093027.png)
-![Pasted image 20230125094112](/medias/Pasted%20image%2020230125094112.png)
+![Pasted image 20230125093027](../medias/Pasted%20image%2020230125093027.png)
+![Pasted image 20230125094112](../medias/Pasted%20image%2020230125094112.png)
 
 ## Implémentation
 

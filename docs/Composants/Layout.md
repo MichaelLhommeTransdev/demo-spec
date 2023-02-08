@@ -1,6 +1,6 @@
 Le layout global de l'application
 
-![Pasted image 20230125092746](/medias/Pasted%20image%2020230125092746.png)
+![Pasted image 20230125092746](../medias/Pasted%20image%2020230125092746.png)
 
 ## Implémentation
 

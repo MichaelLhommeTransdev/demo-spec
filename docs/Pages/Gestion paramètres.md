@@ -3,9 +3,9 @@ Cette page permet à un **administrateur** de gérer les paramètres
 !!! warning
 		Contrainte de routage `HasRole('CRC_Admin')`
 
-![Pasted image 20230125095726](/medias/Pasted%20image%2020230125095726.png)
+![Pasted image 20230125095726](../medias/Pasted%20image%2020230125095726.png)
 
-![Pasted image 20230125095735](/medias/Pasted%20image%2020230125095735.png)
+![Pasted image 20230125095735](../medias/Pasted%20image%2020230125095735.png)
 
 ## Implémentation
 

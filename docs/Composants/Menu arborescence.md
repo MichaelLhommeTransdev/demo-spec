@@ -1,4 +1,4 @@
-![Pasted image 20230125093431](/medias/Pasted%20image%2020230125093431.png)
+![Pasted image 20230125093431](../medias/Pasted%20image%2020230125093431.png)
 
 ## Implémentation
 

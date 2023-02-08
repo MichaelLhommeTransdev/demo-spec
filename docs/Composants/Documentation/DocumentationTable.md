@@ -1,6 +1,6 @@
 Un tableau permettant l'affichage et la suppression des documentations.
 
-![](/medias/documentation_admin_table.png)
+![](../../medias/documentation_admin_table.png)
 
 ## Implémentation
 

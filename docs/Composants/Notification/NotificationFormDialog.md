@@ -1,6 +1,6 @@
 Formulaire de création et d'édition de notification.
 
-![](/medias/notification_form.png)
+![](../../medias/notification_form.png)
 
 Selon la présence ou non d'une propriété `notification` le formulaire devra s'adapter au mode *édition* ou *création*.
 

@@ -1,6 +1,6 @@
 Un simple formulaire permettant de mettre à jour les paramètres liés aux notifications.
 
-![](/medias/notification_settings_form.png)
+![](../../medias/notification_settings_form.png)
 
 ## Validation : 
 

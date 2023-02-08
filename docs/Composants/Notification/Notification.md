@@ -1,8 +1,8 @@
 Une simple carte affichant les informations de la notification ainsi que les contrôles associés
 
-![Pasted image 20230125095301](/medias/Pasted%20image%2020230125095301.png)
+![Pasted image 20230125095301](../../medias/Pasted%20image%2020230125095301.png)
 
-![Pasted image 20230125095309](/medias/Pasted%20image%2020230125095309.png)
+![Pasted image 20230125095309](../../medias/Pasted%20image%2020230125095309.png)
 
 ## Implémentation
 

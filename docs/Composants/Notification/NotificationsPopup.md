@@ -1,6 +1,6 @@
 Composant permettant a l'utilisateur de visualiser et d'interagir avec les notifications qui lui sont destinées.
 
-![Pasted image 20230125095245](/medias/Pasted%20image%2020230125095245.png)
+![Pasted image 20230125095245](../../medias/Pasted%20image%2020230125095245.png)
 
 ## Implémentation
 

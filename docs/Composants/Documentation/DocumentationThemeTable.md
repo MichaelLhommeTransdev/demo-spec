@@ -1,6 +1,6 @@
 Un simple tableau permettant l'affichage et la suppression des thèmes de documentation.
 
-![](/medias/documentation_themes_table.png)
+![](../../medias/documentation_themes_table.png)
 
 ## Implémentation
 

@@ -1,6 +1,6 @@
 Un tableau permettant l'affichage et la suppression des notifications.
 
-![](/medias/notification_admin_table.png)
+![](../../medias/notification_admin_table.png)
 
 ## Implémentation
 
